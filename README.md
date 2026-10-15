@@ -356,5 +356,4 @@ Update this checklist to match the actual state of your repository.
 ## License and Attribution 
 Distributed under the MIT License. Developed by Abhishek Jamkar.
 
-Distributed under the MIT License. Developed by **Abhishek Jamkar**.
-Distributed under the MIT License. Developed by **Abhishek Jamkar**.where appropriate and follow its licensing terms.
+
