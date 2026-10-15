@@ -430,8 +430,8 @@ This project provides practice with:
 -   Integrating Spring Security with an identity provider
 -   Testing service interactions and failure scenarios
 
-## License and Attribution
+## License and Attribution 
+Distributed under the MIT License. Developed by Abhishek Jamkar.
 
-Add a `LICENSE` file if you intend to distribute the project publicly.
-If the implementation is based on a tutorial, credit the original source
-where appropriate and follow its licensing terms.
+Distributed under the MIT License. Developed by **Abhishek Jamkar**.
+Distributed under the MIT License. Developed by **Abhishek Jamkar**.where appropriate and follow its licensing terms.
