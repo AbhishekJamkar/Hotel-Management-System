@@ -19,8 +19,7 @@ centralized configuration, fault tolerance, and token-based security.
 -   [Example API Endpoints](#example-api-endpoints)
 -   [Testing](#testing)
 -   [Implementation Checklist](#implementation-checklist)
--   [Learning Outcomes](#learning-outcomes)
-
+  
 ## Overview
 
 The system is organized around three core business services:
