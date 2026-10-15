@@ -6,11 +6,6 @@ rating responsibilities can be separated into independent microservices,
 with service discovery, inter-service communication, gateway routing,
 centralized configuration, fault tolerance, and token-based security.
 
-> **Note:** This README describes the intended learning-project
-> architecture. Verify every feature, endpoint, port, and dependency
-> against your repository before claiming it is implemented. Replace the
-> repository URL placeholder below with your actual GitHub URL.
-
 ## Table of Contents
 
 -   [Overview](#overview)
@@ -24,8 +19,6 @@ centralized configuration, fault tolerance, and token-based security.
 -   [Example API Endpoints](#example-api-endpoints)
 -   [Testing](#testing)
 -   [Implementation Checklist](#implementation-checklist)
--   [Troubleshooting](#troubleshooting)
--   [Future Improvements](#future-improvements)
 -   [Learning Outcomes](#learning-outcomes)
 
 ## Overview
@@ -231,7 +224,7 @@ Linux/macOS or `mvnw.cmd clean package` on Windows.
 
 A typical local startup order is:
 
-1.  MySQL
+1.  MySQL/PostgreSQL/MongoDB
 2.  Config Server, if clients require it during startup
 3.  Eureka Server
 4.  User Service
@@ -360,75 +353,6 @@ Update this checklist to match the actual state of your repository.
 -   [ ] Spring Security / Okta token validation
 -   [ ] End-to-end API tests
 -   [ ] README setup instructions verified against the repository
-
-## Troubleshooting
-
-  -----------------------------------------------------------------------
-  Issue                               Things to check
-  ----------------------------------- -----------------------------------
-  Maven dependency resolution fails   Spring Boot / Spring Cloud
-                                      compatibility, dependency
-                                      management, Maven connectivity
-
-  MySQL connection fails              MySQL status, database name, port,
-                                      username/password, JDBC URL
-
-  Service does not appear in Eureka   Eureka URL, client dependency,
-                                      application name, startup logs
-
-  Feign returns 404                   Service ID, controller path, HTTP
-                                      method, path variables
-
-  Feign connection refused            Target service status, registered
-                                      instance, host/port
-
-  Gateway returns 404                 Route ID, path predicate, target
-                                      service ID, route configuration
-
-  Config Server cannot load config    Git URL, file names, profile,
-                                      client import settings, credentials
-
-  Circuit Breaker does not activate   Dependency/version, annotation,
-                                      instance configuration, thresholds
-
-  API returns 401                     Token, issuer, expiry, signature,
-                                      audience
-
-  API returns 403                     Required permission or scope may be
-                                      missing
-
-  Feign request is unauthorized       Token propagation and downstream
-                                      security rules
-  -----------------------------------------------------------------------
-
-## Future Improvements
-
-If not already implemented, possible enhancements include:
-
--   Dockerfiles and Docker Compose for local orchestration
--   Centralized exception handling and request validation
--   DTOs instead of exposing persistence entities directly
--   OpenAPI / Swagger documentation
--   Unit and integration tests with JUnit and Mockito
--   Structured logging, correlation IDs, and distributed tracing
--   Health checks and metrics
--   CI pipeline for automated builds and tests
--   Secure secret management and environment-specific configuration
-
-## Learning Outcomes
-
-This project provides practice with:
-
--   Designing service boundaries in a Spring Boot microservices
-    application
--   Building REST APIs and database-backed service layers
--   Discovering services with Eureka
--   Making service-to-service calls with OpenFeign
--   Routing requests with Spring Cloud Gateway
--   Externalizing configuration with Spring Cloud Config
--   Understanding fault-tolerance patterns with Resilience4j
--   Integrating Spring Security with an identity provider
--   Testing service interactions and failure scenarios
 
 ## License and Attribution 
 Distributed under the MIT License. Developed by Abhishek Jamkar.
